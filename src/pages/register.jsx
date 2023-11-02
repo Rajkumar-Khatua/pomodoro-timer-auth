@@ -60,8 +60,8 @@ function Register() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-blue-400">
-      <div className="bg-white p-6 sm:p-10 rounded shadow-2xl w-full sm:w-2/3 md:w-1/2 lg:w-1/3 xl:w-1/4">
+    <div className="min-h-screen flex items-center justify-center bg-white">
+      <div className="bg-white p-6 sm:p-10 rounded-lg shadow-2xl w-full sm:w-2/3 md:w-1/2 lg:w-1/3 xl:w-1/4">
         <h2 className="text-3xl font-bold mb-4 text-gray-800 text-center">
           Create your account
         </h2>

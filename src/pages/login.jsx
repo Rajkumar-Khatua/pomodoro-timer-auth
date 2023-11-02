@@ -56,8 +56,8 @@ function Login() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-blue-400">
-      <div className="bg-white p-16 rounded shadow-2xl w-2/3">
+    <div className="min-h-screen flex items-center justify-center bg-white">
+      <div className="bg-white p-6 sm:p-10 rounded-lg shadow-2xl w-full sm:w-2/3 md:w-1/2 lg:w-1/3 xl:w-1/4">
         <h2 className="text-3xl font-bold mb-10 text-gray-800">
           Login to your account
         </h2>
@@ -77,7 +77,9 @@ function Login() {
         />
         <button
           onClick={signInWithEmail}
-          className={`w-full bg-blue-600 text-white font-bold p-2 rounded relative ${isLoadingEmail ? 'opacity-50 cursor-not-allowed' : ''}`}
+          className={`w-full bg-blue-600 text-white font-bold p-2 rounded relative ${
+            isLoadingEmail ? "opacity-50 cursor-not-allowed" : ""
+          }`}
           disabled={isLoadingEmail}
         >
           {isLoadingEmail ? (
@@ -88,7 +90,9 @@ function Login() {
         </button>
         <button
           onClick={signInWithGoogle}
-          className={`w-full bg-red-600 text-white font-bold p-2 rounded mt-4 relative ${isLoadingGoogle ? 'opacity-50 cursor-not-allowed' : ''}`}
+          className={`w-full bg-red-600 text-white font-bold p-2 rounded mt-4 relative ${
+            isLoadingGoogle ? "opacity-50 cursor-not-allowed" : ""
+          }`}
           disabled={isLoadingGoogle}
         >
           {isLoadingGoogle ? (
@@ -97,7 +101,12 @@ function Login() {
             "Sign In with Google"
           )}
         </button>
-        <Link to="/register">Don't have an account</Link>
+        <Link
+          to="/register"
+          className="text-center mt-4 text-blue-500 hover:text-blue-700"
+        >
+          Don't have an account? Register
+        </Link>
       </div>
     </div>
   );
