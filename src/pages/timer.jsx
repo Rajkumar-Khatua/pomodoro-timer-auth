@@ -3,7 +3,7 @@ import soundFile from "../../src/sound.mp3";
 import { auth } from "../firebase";
 
 function Timer() {
-  const [minutes, setMinutes] = useState(1);
+  const [minutes, setMinutes] = useState(25);
   const [seconds, setSeconds] = useState(0);
   const [isActive, setIsActive] = useState(false);
   const [isBreak, setIsBreak] = useState(false);
