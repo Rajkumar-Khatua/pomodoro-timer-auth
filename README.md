@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# MtechZilla Interview 1st Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my submission for the first assignment as part of the interview process with MtechZilla.
 
-## Available Scripts
+## Assignment Details
 
-In the project directory, you can run:
+### Task
+The task is to create a timer application with specific requirements:
+- Show a 25-minute work timer where the user can reset, pause, and start the timer.
+- Show a 5-minute break timer when the 25-minute timer is complete.
 
-### `npm start`
+### Implementation
+I have implemented the timer application using React. It includes a work timer and a break timer, and the user can perform actions such as reset, start, and pause.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
+- React
+- JavaScript
+- Tailwind CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
+To run the application, follow these steps:
+1. Clone this repository to your local machine.
+2. Navigate to the project directory.
+3. Install dependencies using `npm install` or `yarn install`.
+4. Start the development server using `npm start` or `yarn start.
 
-### `npm test`
+## Author
+Rajkumar Khatua
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Contact
+- Email: rajkhatua2020@gmail.com
+- LinkedIn: https://www.linkedin.com/in/rajkumar-khatua-57154a20b/
+- GitHub: https://github.com/Rajkumar-Khatua
 
-### `npm run build`
+# Pomodoro Timer
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project is a simple Pomodoro timer built with React. It uses Firebase for user authentication.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 25-minute work timer
+- 5-minute break timer
+- Sound notification when the timer completes
+- User authentication with Firebase
+- Google login
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone this repository.
+2. Run `npm install` to install the dependencies.
+3. Create a Firebase project and enable Email/Password and Google authentication.
+4. Replace the Firebase configuration in the `firebase.js` file with your own.
+5. Run `npm start` to start the development server.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Register or log in with your email or Google account.
+2. Click the "Start" button to start the timer.
+3. Work until the timer completes, then take a break.
+4. Repeat!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contributing
 
-## Learn More
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Thank you for considering my application. I look forward to discussing this assignment further during the interview.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Rajkumar Khatua
