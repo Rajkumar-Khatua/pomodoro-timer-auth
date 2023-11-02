@@ -8,28 +8,37 @@ import {
   signInWithPopup,
   signInWithEmailAndPassword,
 } from "firebase/auth";
-import { auth, provider } from "../firebase";
 import { Link, useNavigate } from "react-router-dom";
-
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [isLoadingEmail, setIsLoadingEmail] = useState(false); // Loading state for email login
+  const [isLoadingGoogle, setIsLoadingGoogle] = useState(false); // Loading state for Google login
 
   const navigate = useNavigate();
 
   const auth = getAuth();
+  const provider = new GoogleAuthProvider();
+
   const signInWithEmail = () => {
+    setIsLoadingEmail(true);
+
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         console.log(userCredential.user);
       })
       .catch((error) => {
         console.log(error.message);
+      })
+      .finally(() => {
+        setIsLoadingEmail(false);
       });
   };
 
   const signInWithGoogle = () => {
+    setIsLoadingGoogle(true);
+
     signInWithPopup(auth, provider)
       .then((result) => {
         console.log(result.user);
@@ -40,6 +49,9 @@ function Login() {
       })
       .catch((error) => {
         console.log(error.message);
+      })
+      .finally(() => {
+        setIsLoadingGoogle(false);
       });
   };
 
@@ -65,15 +77,25 @@ function Login() {
         />
         <button
           onClick={signInWithEmail}
-          className="w-full bg-blue-600 text-white font-bold p-2 rounded"
+          className={`w-full bg-blue-600 text-white font-bold p-2 rounded relative ${isLoadingEmail ? 'opacity-50 cursor-not-allowed' : ''}`}
+          disabled={isLoadingEmail}
         >
-          Sign In with Email
+          {isLoadingEmail ? (
+            <div className="w-6 h-6 border-t-2 border-b-2 border-blue-100 border-r-2 border-blue-400 rounded-full animate-spin absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+          ) : (
+            "Sign In with Email"
+          )}
         </button>
         <button
           onClick={signInWithGoogle}
-          className="w-full bg-red-600 text-white font-bold p-2 rounded mt-4"
+          className={`w-full bg-red-600 text-white font-bold p-2 rounded mt-4 relative ${isLoadingGoogle ? 'opacity-50 cursor-not-allowed' : ''}`}
+          disabled={isLoadingGoogle}
         >
-          Sign In with Google
+          {isLoadingGoogle ? (
+            <div className="w-6 h-6 border-t-2 border-b-2 border-red-100 border-r-2 border-red-400 rounded-full animate-spin absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+          ) : (
+            "Sign In with Google"
+          )}
         </button>
         <Link to="/register">Don't have an account</Link>
       </div>
