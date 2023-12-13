@@ -60,8 +60,5 @@ This project is a simple Pomodoro timer built with React. It uses Firebase for u
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
----
-
-Thank you for considering my application. I look forward to discussing this assignment further during the interview.
-
+----------------
 Rajkumar Khatua
