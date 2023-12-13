@@ -1,10 +1,7 @@
-# MtechZilla Interview 1st Assignment
 
-This is my submission for the first assignment as part of the interview process with MtechZilla.
+# Pomodoro Timer
 
-## Assignment Details
-
-### Task
+### Functionality
 The task is to create a timer application with specific requirements:
 - Show a 25-minute work timer where the user can reset, pause, and start the timer.
 - Show a 5-minute break timer when the 25-minute timer is complete.
